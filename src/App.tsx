@@ -23,7 +23,7 @@ interface Data {
 function App() {
     return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter basename={"/Unsplash-Clone"}>
       <Routes>
         <Route path="/" element={<Homepage />}/>
         <Route path="/Login" element={<Login />} />
