@@ -1,11 +1,14 @@
 {
   "name": "reactprojects",
   "version": "1.0.0",
+  "homepage":"http://AdityaaPhadte25.github.io/Unsplash-Clone",
   "description": "",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "webpack serve --mode development",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "build": "webpack --mode production"
   },
   "keywords": [],
@@ -22,6 +25,7 @@
     "babel-loader": "^9.1.2",
     "css-loader": "^6.7.3",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
     "ts-loader": "^9.4.2",
